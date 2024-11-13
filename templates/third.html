@@ -1,0 +1,37 @@
+ {% extends "layout.html" %}	
+
+{% set active_page = "ques3" %}
+
+{% block title %}Question 3{% endblock %}
+
+{% block content %}
+   <h1>Question 3:</h1>
+      <h2>On a brawler of the rarity "Epic", what do you get from the 6th tier of mastery?</h2>
+   
+   <div class="container">
+	<form action={{ url_for("render_ques4") }} method="POST">
+	   <div class="form-check">
+		  <input type="radio" class="form-check-input" id="3radio1" name="answer3" value="3option1" checked>150 Power Points
+		  <label class="form-check-label" for="3radio1"></label>
+	   </div>
+		   
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="3radio2" name="answer3" value="3option2">1250 Coins
+		  <label class="form-check-label" for="3radio2"></label>
+		</div>
+		
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="3radio3" name="answer3" value="3option3">1500 Coins
+		  <label class="form-check-label" for="3radio3"></label>
+		</div>
+		
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="3radio4" name="answer3" value="3option4">150 Credits
+		  <label class="form-check-label" for="3radio4"></label>
+		</div>
+	
+	 <button type="submit" class="btn btn-primary">Submit</button>
+
+	</form>
+</div>
+{% endblock %}

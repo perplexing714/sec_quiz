@@ -1,0 +1,37 @@
+{% extends "layout.html" %}	
+
+{% set active_page = "ques5" %}
+
+{% block title %}Question 5{% endblock %}
+
+{% block content %}
+   <h1>Question 5:</h1>
+      <h2>How long does it take Pearl's Heat Bar to full charge up from 0?</h2>
+   
+   <div class="container">
+	<form action={{ url_for("render_results") }} method="POST">
+	   <div class="form-check">
+		  <input type="radio" class="form-check-input" id="5radio1" name="answer5" value="5option1" checked>9 seconds
+		  <label class="form-check-label" for="5radio1"></label>
+	   </div>
+		   
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="5radio2" name="answer5" value="5option2">10 seconds
+		  <label class="form-check-label" for="5radio2"></label>
+		</div>
+		
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="5radio3" name="answer5" value="5option3">11 seconds
+		  <label class="form-check-label" for="5radio3"></label>
+		</div>
+		
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="5radio4" name="answer5" value="5option4">12 seconds
+		  <label class="form-check-label" for="5radio4"></label>
+		</div>
+	
+	 <button type="submit" class="btn btn-primary">Submit</button>
+
+	</form>
+</div>
+{% endblock %}

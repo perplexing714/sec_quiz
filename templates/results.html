@@ -1,0 +1,16 @@
+{% extends "layout.html" %}	
+
+{% set active_page = "results" %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+   <h1>Results</h1>
+   <p class="results">Question 1 is {{ q1 }} </p>
+   <p class="results">Question 2 is {{ q2 }} </p>
+   <p class="results">Question 3 is {{ q3 }} </p>
+   <p class="results">Question 4 is {{ q4 }} </p>
+   <p class="results">Question 5 is {{ q5 }} </p>
+   
+   <h2> Your score is {{ score }}/5 </h2>
+{% endblock %}

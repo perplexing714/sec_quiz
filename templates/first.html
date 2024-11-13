@@ -1,0 +1,37 @@
+{% extends "layout.html" %}			
+
+{% set active_page = "ques1" %}
+
+{% block title %}Question 1{% endblock %}
+
+{% block content %}
+   <h1>Question 1: </h1>
+   <h2>How much damage does Nani do when all three bullets hit another brawler while using damage gear? (NO BRAWLER BUFFS)</h2>
+   
+<div class="container">
+	<form action={{ url_for("render_ques2") }} method="POST">
+	   <div class="form-check">
+		  <input type="radio" class="form-check-input" id="2radio1" name="answer1" value="option1" checked>5520
+		  <label class="form-check-label" for="2radio1"></label>
+	   </div>
+		   
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="2radio2" name="answer1" value="option2">5086
+		  <label class="form-check-label" for="2radio2"></label>
+		</div>
+		
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="2radio3" name="answer1" value="option3">5106
+		  <label class="form-check-label" for="2radio3"></label>
+		</div>
+		
+		<div class="form-check">
+		  <input type="radio" class="form-check-input" id="2radio4" name="answer1" value="option4">5038
+		  <label class="form-check-label" for="2radio4"></label>
+		</div>
+	
+	 <button type="submit" class="btn btn-primary">Submit</button>
+
+	</form>
+</div>
+{% endblock %}
